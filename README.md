@@ -19,3 +19,6 @@
 
 ### 4. Dockerhub 확인
 ![image](https://user-images.githubusercontent.com/74950655/100383774-ccbf9280-3061-11eb-9b7e-9a50c069af8e.png)
+
+### 5. AWS Beanstalk을 이용한 클라우드 환경에서 Hosting
+![image](https://user-images.githubusercontent.com/74950655/100383830-ee207e80-3061-11eb-8239-19b10f1f5279.png)
