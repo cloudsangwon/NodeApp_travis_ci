@@ -1,5 +1,13 @@
 # CRUD App Hosting
 
+환경
+OS : WSL2 (linux)
+Frontend : React.Js
+Backend : Node.Js
+DB : AWS RDS
+
+
+
 ### 1. NodeJs + React 로 간단한 CRUD 기능 구현
 ![image](https://user-images.githubusercontent.com/74950655/100382610-13f85400-305f-11eb-97c5-9c1a9051c416.png)
 
