@@ -29,6 +29,7 @@ function App() {
   };
 
   const deleteReview = (service) => {
+    // localhost:5000/api/delete --> /api/delete fixed
     Axios.delete(`/api/delete/${service}`);
   }
 
