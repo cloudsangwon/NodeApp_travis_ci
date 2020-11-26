@@ -9,12 +9,12 @@ function App() {
   const [newReview, setNewReview] =  useState('');
 
    useEffect(()=>{
-      Axios.get('/api/get').then((response)=>{
+      Axios.get('http://localhost:5000/api/get').then((response)=>{
         setServiceList(response.data);
       })
     })
   const submitReview = () => {
-    Axios.post('/api/insert', {
+    Axios.post('http://localhost:5000/api/insert', {
       serviceName:serviceName,
       serviceReview:serviceReview
     }) 
@@ -29,12 +29,11 @@ function App() {
   };
 
   const deleteReview = (service) => {
-    // localhost:5000/api/delete --> /api/delete fixed
-    Axios.delete(`/api/delete/${service}`);
+    Axios.delete(`http://localhost:5000/api/delete/${service}`);
   }
 
   const updateReview = (service) => {
-    Axios.put("/api/update", {
+    Axios.put("http://localhost:5000/api/update", {
       serviceName:service,
       serviceReview:newReview
     });
