@@ -32,17 +32,20 @@
 
 ![image](https://user-images.githubusercontent.com/74950655/100384088-a5b59080-3062-11eb-991f-115061d082bf.png)
 
-<데이터 삽입>
+# <데이터 삽입>
 ![image](https://user-images.githubusercontent.com/74950655/100384118-bbc35100-3062-11eb-87af-4f8e67ef044a.png)
 
 ![image](https://user-images.githubusercontent.com/74950655/100384134-c67de600-3062-11eb-9a53-4a23045b1820.png)
 
 ![image](https://user-images.githubusercontent.com/74950655/100384171-dac1e300-3062-11eb-8226-a19b6a477081.png)
 
-<데이터 변경>
+# <데이터 변경>
 ![image](https://user-images.githubusercontent.com/74950655/100384254-10ff6280-3063-11eb-81aa-851a503f32b0.png)
 
 ![image](https://user-images.githubusercontent.com/74950655/100384294-270d2300-3063-11eb-9b18-d6f389bd1504.png)
 
 ![image](https://user-images.githubusercontent.com/74950655/100384406-73586300-3063-11eb-9b56-e4184da545a3.png)
+
+# <데이터 삭제>
+![image](https://user-images.githubusercontent.com/74950655/100384458-8f5c0480-3063-11eb-8f33-d6d2085c257d.png)
 
