@@ -37,11 +37,12 @@
 
 ![image](https://user-images.githubusercontent.com/74950655/100384134-c67de600-3062-11eb-9a53-4a23045b1820.png)
 
-<데이터 변경>
 ![image](https://user-images.githubusercontent.com/74950655/100384171-dac1e300-3062-11eb-8226-a19b6a477081.png)
 
+<데이터 변경>
 ![image](https://user-images.githubusercontent.com/74950655/100384254-10ff6280-3063-11eb-81aa-851a503f32b0.png)
 
 ![image](https://user-images.githubusercontent.com/74950655/100384294-270d2300-3063-11eb-9b18-d6f389bd1504.png)
 
+![image](https://user-images.githubusercontent.com/74950655/100384406-73586300-3063-11eb-9b56-e4184da545a3.png)
 
