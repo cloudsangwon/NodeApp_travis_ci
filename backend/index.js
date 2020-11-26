@@ -4,14 +4,16 @@ const app = express();
 const port = 5000;
 
 // Mysql
-const mysql = require('mysql');
+//const mysql = require('mysql');
+/*
 const db = mysql.createPool({
     host:'',
     port:3306,
     user:'',
     password:'',
     database:''
-});
+});*/
+const db = require('./db');
 // cors
 const cors = require('cors');
 app.use(cors());
@@ -29,7 +31,7 @@ app.use(express.json()); // 이거 없어서 http:localhost:5000/api/insert POST
 app.delete('/api/delete/:serviceName',(req,res)=>{
     const name = req.params.serviceName;
     const sqlDelete="DELETE FROM service_reviews WHERE serviceName=?";
-    db.query(sqlDelete,name,(err,result)=>{
+    db.pool.query(sqlDelete,name,(err,result)=>{
         if(err){
             console.log(err);throw(err);
         }
@@ -46,7 +48,7 @@ app.put('/api/update',(req,res)=>{
     const review = req.body.serviceReview;
 
     const sqlUpdate = "UPDATE service_reviews SET serviceReview = ? WHERE serviceName = ?";
-    db.query(sqlUpdate,[review,name],(err,result)=>{
+    db.pool.query(sqlUpdate,[review,name],(err,result)=>{
         if(err){
             console.log(err);
             throw(err);
@@ -60,7 +62,7 @@ app.put('/api/update',(req,res)=>{
 //  get 요청으로 service_reviews의 모든 값을 볼 수 있는 쿼리문을 보낸다.
 app.get('/api/get',(req,res)=>{
     const sqlSelect = "SELECT * FROM service_reviews";
-    db.query(sqlSelect,(err,result)=>{
+    db.pool.query(sqlSelect,(err,result)=>{
         if(err)
         {
             console.log(err);
@@ -79,7 +81,7 @@ app.post('/api/insert',(req,res)=> {
     const serviceReview = req.body.serviceReview;
 
     const sqlInsert = "INSERT INTO service_reviews (serviceName, serviceReview) VALUES (?,?)";
-    db.query(sqlInsert,[serviceName,serviceReview],(err,results)=>{
+    db.pool.query(sqlInsert,[serviceName,serviceReview],(err,results)=>{
         if(err) {
             console.log(err); throw(err);
         }

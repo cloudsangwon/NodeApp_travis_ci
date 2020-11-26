@@ -25,10 +25,10 @@ after_success:
 deploy:
   provider: elasticbeanstalk # service Name Elasticbeanstalk
   region: "ap-northeast-2" # region : seoul 
-  app: "sangwon_nodejs_study_crud" # application name 
-  env: "SangwonNodejsStudyCrud-env" # enviroment name 
+  app: "cloudsangwon_study_nodejs" # application name 
+  env: "CloudsangwonStudyNodejs-env" # enviroment name 
   bucket_name: elasticbeanstalk-ap-northeast-2-002174788893 # S3 bucket_name , region ap-northeast-2
-  bucket_path: "sangwon_nodejs_study_crud" # app name  = bucket_path 
+  bucket_path: "cloudsangwon_study_nodejs" # app name  = bucket_path 
   on:
     branch: master # branch master 
   # env var setting 
