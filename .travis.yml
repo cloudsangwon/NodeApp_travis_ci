@@ -10,7 +10,7 @@ before_install:
 
 script:
   - docker run -e CI=true sangwondockerhub/react-test-app npm test
-
+# 성공하면, 이미지 차례로 빌드 하고 도커허브에 푸시 
 after_success:
   - docker build -t sangwondockerhub/Study_Nodejs_docker-frontend ./frontend
   - docker build -t sangwondockerhub/Study_Nodejs_docker-backend ./backend
