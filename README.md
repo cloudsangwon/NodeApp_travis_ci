@@ -2,6 +2,8 @@
 
 환경
 OS : WSL2 (linux)
+
+
 Frontend : React.Js
 Backend : Node.Js
 DB : AWS RDS
