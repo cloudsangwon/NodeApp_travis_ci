@@ -6,21 +6,21 @@ services:
   - docker
 # 없어도 됨 
 before_install:
-  - docker build -t sangwondockerhub/Study_Nodejs_react-test-app -f ./frontend/Dockerfile.dev ./frontend
+  - docker build -t sangwondockerhub/study_nodejs_react-test-app -f ./frontend/Dockerfile.dev ./frontend
 
 script:
   - docker run -e CI=true sangwondockerhub/react-test-app npm test
 # 성공하면, 이미지 차례로 빌드 하고 도커허브에 푸시 
 after_success:
-  - docker build -t sangwondockerhub/Study_Nodejs_docker-frontend ./frontend
-  - docker build -t sangwondockerhub/Study_Nodejs_docker-backend ./backend
-  - docker build -t sangwondockerhub/Study_Nodejs_docker-nginx ./nginx
+  - docker build -t sangwondockerhub/study_nodejs_docker-frontend ./frontend
+  - docker build -t sangwondockerhub/study_nodejs_docker-backend ./backend
+  - docker build -t sangwondockerhub/study_nodejs_docker-nginx ./nginx
 
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
 
-  - docker push sangwondockerhub/Study_Nodejs_docker-frontend
-  - docker push sangwondockerhub/Study_Nodejs_docker-backend
-  - docker push sangwondockerhub/Study_Nodejs_docker-nginx
+  - docker push sangwondockerhub/study_nodejs_docker-frontend
+  - docker push sangwondockerhub/study_nodejs_docker-backend
+  - docker push sangwondockerhub/study_nodejs_docker-nginx
 
 deploy:
   provider: elasticbeanstalk # service Name Elasticbeanstalk
