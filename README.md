@@ -5,9 +5,18 @@ OS : WSL2 (linux)
 
 
 Frontend : React.Js
+
+
 Backend : Node.Js
+
+
 DB : AWS RDS
 
+
+Cloud Hosting : AWS Elastic Beanstalk
+
+
+Container : Docker 
 
 
 ### 1. NodeJs + React 로 간단한 CRUD 기능 구현
