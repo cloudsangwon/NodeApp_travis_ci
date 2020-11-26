@@ -22,3 +22,8 @@
 
 ### 5. AWS Beanstalk을 이용한 클라우드 환경에서 Hosting
 ![image](https://user-images.githubusercontent.com/74950655/100383830-ee207e80-3061-11eb-8239-19b10f1f5279.png)
+
+### 6. Beanstalk 에서 AWS RDS에 접근하기 위해 동일한 VPC 설정 및 환경 변수 설정 
+![image](https://user-images.githubusercontent.com/74950655/100383906-288a1b80-3062-11eb-9f83-e5b4775ced48.png)
+![image](https://user-images.githubusercontent.com/74950655/100383950-45265380-3062-11eb-843b-8408181586ec.png)
+![image](https://user-images.githubusercontent.com/74950655/100383972-57a08d00-3062-11eb-8408-9f636b768bc3.png)
